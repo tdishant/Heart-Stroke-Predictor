@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    background: #00248f;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+
+nav .logo{
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: #111;
+    background:rgb(0, 204, 255);
+}
+
+.main-wrapper{
+    background-image:  url("background.jpeg");
+    background-color:rgba(41, 143, 227, 0.9);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.main-form{
+    height: 90%;
+    width: 70%;
+    backdrop-filter: blur(10px);
+    background-color:rgba(41, 143, 227, 0.5);
+    background-blend-mode: screen;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-element{
+    margin: 0.5em 5em;
+    display: flex;
+    justify-content:space-between;
+}
+
+.form-element label, legend{
+    color: aliceblue;
+}
+
+.form-element legend{
+    text-align: center;
+}
+
+fieldset{
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+}
+
+.fieldset-element{
+    padding: 0.5em;
+}
+
+.submit-button{
+    background-color:rgba(2, 95, 171);
+    width: 7em;
+    height: 3em;
+    align-self: center;
+    color: aliceblue;
+}
+
+.display-result{
+    margin-top: 5px;
+    color: aliceblue;
+}
