@@ -54,10 +54,10 @@ def stroke_prediction():
 
         user_input = np.array(user_input)
 
-        sc = load('scaler.joblib')
+        sc = load('app/scaler.joblib')
         user_input_scaled = sc.transform (user_input.reshape(1, -1))
 
-        model = load('stroke_pred_model.joblib')
+        model = load('app/stroke_pred_model.joblib')
 
         prediction = model.predict(user_input_scaled)
 
